@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App 3 - Lista de missões</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main class="cartao">
+    <h1>📖 Missões do dia</h1>
+    <p id="progresso" class="progresso">0 de 0 missões concluídas</p>
+
+    <!-- Usamos um <form> para a missão ser adicionada também ao apertar Enter -->
+    <form id="formulario" class="formulario">
+        <input type="text" id="campo-missao" placeholder="Ex.: Derrotar o Bowser" autocomplete="off">
+        <button type="submit">Adicionar</button>
+    </form>
+
+    <!-- A lista começa vazia. O JavaScript cria os itens aqui dentro. -->
+    <ul id="lista" class="lista"></ul>
+
+    <p id="vazio" class="vazio">Nenhuma missão ainda. Adicione a primeira!</p>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
